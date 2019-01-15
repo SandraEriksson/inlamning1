@@ -1,0 +1,22 @@
+.container {
+    width: 50%; 
+}
+
+.color-text-2019 {
+    color: rgb(255, 111, 97);
+}
+
+.color-background-2019 {
+    background: rgb(255, 111, 97);
+    color: #ffffff;
+}
+
+a {
+    color: rgb(255, 111, 97);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(253, 85, 85);
+    text-decoration: none;
+}

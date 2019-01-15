@@ -1,6 +1,6 @@
 $(function () {
 
-    $('form').submit(function(e) {
+    $('form').submit(function(event) {
 
         let nameResult = validateName();
         let passwordResult = validatePassword();
@@ -11,14 +11,14 @@ $(function () {
 
         if (nameResult == true && passwordResult == true
             && radioResult == true && continentResult == true && textResult == true && checkResult == true) {
-                window.open("submit.html",'_self');
-               
+               window.open("submit.html",'_self');
         }
+
         event.preventDefault()
     })
 
 
-   
+
 
 
     function validateName() {
@@ -28,9 +28,8 @@ $(function () {
         if (input.val() == "") {
             input.addClass('is-invalid');
             document.getElementById("errorName").innerHTML = "Please enter your name";
-            input.value.lengt < 2;
             return false;
-        }  else {
+        } else {
             input.removeClass('is-invalid').addClass('is-valid');
             return true;
         }
